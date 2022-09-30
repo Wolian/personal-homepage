@@ -1,0 +1,1 @@
+export const email ="krzysiek.banasiak03@gmail.com";
