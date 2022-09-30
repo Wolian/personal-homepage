@@ -1,9 +1,7 @@
+import {Header} from "./features/Header";
 
-
-function App() {
-  return (
-    <div></div>
-  );
-}
-
-export default App;
+export const App = () => {
+    return(
+        <Header/>
+    );
+};
