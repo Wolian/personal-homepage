@@ -18,7 +18,10 @@ export const Content = styled.div`
 `;
 
 export const ThisIs = styled.p`
-  
+  font-weight: 700;
+  font-size: 12px;
+  margin-bottom: 12px;
+  color: ${({ theme }) => theme.color.slateGray}
 `;
 
 export const Name = styled.h1`
