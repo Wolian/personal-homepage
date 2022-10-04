@@ -1,20 +1,21 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.header`
-  display: flex;
-  align-items: center;
-`;
-
-export const Foto = styled.div`
-  
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 66px;
+  transition: 0.4s;
+  max-width: 1089px;
 `;
 
 export const Image = styled.img`
-
+  width: 398px;
+  height: 398px;
+  border-radius: 50%;
 `;
 
 export const Content = styled.div`
-
+  
 `;
 
 export const ThisIs = styled.p`
@@ -54,7 +55,6 @@ export const Email = styled.a`
   font-size: 20px;
   text-decoration: none;
   cursor: pointer;
-  
   
   &:hover{
     box-shadow: 2px -2px 0px #8CC2FF, -2px 2px 0px #8CC2FF, 2px 2px 0px #8CC2FF, -2px -2px 0px #8CC2FF;
