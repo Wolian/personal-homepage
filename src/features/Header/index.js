@@ -1,4 +1,4 @@
-import {Content, Description, Email, Foto, Image, Name, ThisIs, Wrapper} from "./styled";
+import {Content, Description, Email, Image, Name, ThisIs, Wrapper} from "./styled";
 import {email} from "../email";
 import Message from "../../common/icons/Message.svg";
 import Me from "./KrzysztofBanasiak.jpg";
