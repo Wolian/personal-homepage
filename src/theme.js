@@ -8,5 +8,11 @@ export const theme = {
         white: "#FFFFFF", //buttonText
         blue: "#2517EB", //buttonFocus
         anakiwa: "#8CC2FF", //buttonFocusShadow
+    },
+
+    breakpoints: {
+        mobile: 767,
+        tabletVertical: 991,
+        tabletHorizontal: 1199
     }
 };

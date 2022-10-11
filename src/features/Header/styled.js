@@ -6,41 +6,37 @@ export const Wrapper = styled.header`
   grid-gap: 66px;
   transition: 0.4s;
   max-width: 1089px;
+  align-items: center;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.tabletVertical}px){
+    grid-gap: 32px;
+  };
   
-  @media (max-width: 767px){
-    display: flex;
-    flex-direction: column;
-    gap: 0;
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px){
+    grid-gap: 12px;
+    grid-template-columns: 1fr;
   };
 `;
 
 export const Image = styled.img`
+  width: 30vw;
   max-width: 398px;
-  max-height: 398px;
   border-radius: 50%;
   
-  @media (max-width: 767px){
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px){
     max-width: 133px;
-    max-height: 133px;
-    margin-top: 12px;
     
   }
 `;
 
-export const Content = styled.div`
-  margin-top: 64px;
-
-  @media (max-width: 767px){
-    margin-top: 12px;
-  };
-`;
-
 export const ThisIs = styled.p`
+  text-transform: uppercase;
   font-weight: 700;
   font-size: 12px;
+  letter-spacing: initial;
   color: ${({ theme }) => theme.colors.slateGray};
 
-  @media (max-width: 767px){
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px){
     margin: 0;
   };
 `;
@@ -49,19 +45,28 @@ export const Name = styled.h1`
   font-weight: 900;
   font-size: 38px;
   color: ${({ theme }) => theme.colors.black};
+  margin: 12px 0 0 0;
   
-  @media (max-width: 767px){
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px){
     font-size: 22px;
+    margin-top: 8px;
   };
 `;
 
 export const Description = styled.p`
-  font-weight: 400;
+  margin-top: 35px;
   font-size: 20px;
+  max-width: 650px;
+  line-height: 1.4;
   color: ${({ theme }) => theme.colors.slateGray};
 
-  @media (max-width: 767px){
+  @media (max-width: ${({ theme }) => theme.breakpoints.tabletVertical}px){
+    margin-top: 16px;
+  };
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px){
     font-size: 17px;
+    max-width: 570px;
   };
 `;
 
