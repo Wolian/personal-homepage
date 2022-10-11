@@ -1,4 +1,4 @@
-import {Item, List} from "./styled";
+import {Item, List} from "../../common/MainTile/styled";
 import {MainTile} from "../../common/MainTile";
 
 export const Skills = () => {
