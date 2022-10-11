@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.js": "/personal-homepage/static/js/main.d59cdc9d.js",
+    "main.js": "/personal-homepage/static/js/main.af3b8203.js",
     "static/js/787.88012170.chunk.js": "/personal-homepage/static/js/787.88012170.chunk.js",
+    "static/media/KrzysztofBanasiak.jpg": "/personal-homepage/static/media/KrzysztofBanasiak.562381c74abc7af0cd65.jpg",
     "index.html": "/personal-homepage/index.html",
     "static/media/Message.svg": "/personal-homepage/static/media/Message.a791c274a5ca6a7bba77c80d96c14056.svg",
-    "main.d59cdc9d.js.map": "/personal-homepage/static/js/main.d59cdc9d.js.map",
+    "main.af3b8203.js.map": "/personal-homepage/static/js/main.af3b8203.js.map",
     "787.88012170.chunk.js.map": "/personal-homepage/static/js/787.88012170.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.d59cdc9d.js"
+    "static/js/main.af3b8203.js"
   ]
 }
