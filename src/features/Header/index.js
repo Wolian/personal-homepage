@@ -1,4 +1,4 @@
-import {Content, Description, Email, Image, Name, ThisIs, Wrapper} from "./styled";
+import { Description, Email, Image, Name, ThisIs, Wrapper} from "./styled";
 import {email} from "../email";
 import Message from "../../common/icons/Message.svg";
 import Me from "./KrzysztofBanasiak.jpg";
@@ -6,8 +6,8 @@ import Me from "./KrzysztofBanasiak.jpg";
 export const Header = () => (
   <Wrapper>
       <Image src={Me} alt="Krzysztof Banasiak"/>
-      <Content>
-        <ThisIs> THIS IS </ThisIs>
+      <div>
+        <ThisIs> this is </ThisIs>
           <Name> Krzysztof Banasiak </Name>
           <Description>
               👨🏻‍💻 I'm a passionate Frontend Developer in love with React, currently looking for new job opportunities
@@ -16,6 +16,6 @@ export const Header = () => (
               <img src={Message} alt=""/>
               Hire Me
           </Email>
-      </Content>
+      </div>
   </Wrapper>
 );
