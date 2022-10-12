@@ -27,6 +27,15 @@ export const Content = styled.div`
 export const List = styled.ul`
   padding: 0;
   column-count: 3;
+
+  @media(max-width: ${({ theme }) => theme.breakpoints.tabletVertical}px) {
+    column-count: 2;
+  };
+
+  @media(max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+    column-count: 1;
+  };
+  
 `;
 
 export const Item = styled.li`
@@ -34,6 +43,11 @@ export const Item = styled.li`
   display: flex;
   align-items: center;
   list-style: none;
+  line-height: 1.4;
+  
+  @media(max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+    line-height: 1.2;
+  };
   
   &:before {
     content: "";
