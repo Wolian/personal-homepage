@@ -80,7 +80,6 @@ export const Email = styled.a`
   padding: 12px 16px;
   margin-top: 32px;
   background: ${({ theme }) => theme.colors.scienceBlue};
-  color: ${({ theme }) => theme.colors.iron};
   border: 1px solid rgba(209, 213, 218, 0.3);
   border-radius: 4px;
   color: ${({ theme }) => theme.colors.white};
