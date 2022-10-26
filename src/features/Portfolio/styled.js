@@ -22,3 +22,13 @@ export const SubTitle = styled.p`
   font-size: 20px;
   margin: 0 0 24px 0;
 `;
+
+export const TileWrapper = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+
+  @media(max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+    grid-template-columns: 1fr;
+  };
+`;
