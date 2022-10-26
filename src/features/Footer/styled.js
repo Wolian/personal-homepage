@@ -30,3 +30,11 @@ export const Text = styled.p`
   max-width: 670px;
   line-height: 1.4;
 `;
+
+export const Icons = styled.p`
+  margin-top: 56px;
+`;
+
+export const Link = styled.a`
+  margin-right: 24px;
+`;
