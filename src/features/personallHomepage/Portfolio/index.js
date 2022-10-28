@@ -1,6 +1,6 @@
 import {Header, Image, SubTitle, TileWrapper, Title, Wrapper} from "./styled";
-import BlueGithub from "../../common/icons/BlueGithub.svg"
-import { ProjectTile } from "../../common/ProjectTile";
+import BlueGithub from "../../../common/icons/BlueGithub.svg"
+import { ProjectTile } from "../../../common/ProjectTile";
 
 export const Portfolio = () => {
     return (

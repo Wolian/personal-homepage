@@ -1,5 +1,5 @@
-import {Item, List} from "../../common/MainTile/styled";
-import {MainTile} from "../../common/MainTile";
+import {Item, List} from "../../../common/MainTile/styled";
+import {MainTile} from "../../../common/MainTile";
 
 export const NextLearn = () => {
     const NextLearnList = (

@@ -1,8 +1,8 @@
 import {Email, Icons, Link, Talk, Text, Wrapper} from "./styled";
 import {email} from "../email";
-import {ReactComponent as Github} from "../../common/icons/Github.svg";
-import {ReactComponent as Facebook} from "../../common/icons/Facebook.svg";
-import {ReactComponent as LinkedIn} from "../../common/icons/LinkedIn.svg";
+import {ReactComponent as Github} from "../../../common/icons/Github.svg";
+import {ReactComponent as Facebook} from "../../../common/icons/Facebook.svg";
+import {ReactComponent as LinkedIn} from "../../../common/icons/LinkedIn.svg";
 
 export const Footer = () => {
   return (
