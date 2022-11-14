@@ -1,7 +1,6 @@
 {
   "files": {
-    "main.js": "/personal-homepage/static/js/main.778efa1b.js",
-    "static/js/787.88012170.chunk.js": "/personal-homepage/static/js/787.88012170.chunk.js",
+    "main.js": "/personal-homepage/static/js/main.05c2614e.js",
     "static/media/KrzysztofBanasiak.jpg": "/personal-homepage/static/media/KrzysztofBanasiak.562381c74abc7af0cd65.jpg",
     "static/media/Github.svg": "/personal-homepage/static/media/Github.09abe07d9aebd72f04b4118999889c9a.svg",
     "index.html": "/personal-homepage/index.html",
@@ -9,10 +8,9 @@
     "static/media/LinkedIn.svg": "/personal-homepage/static/media/LinkedIn.2c26b104242a1c77c13c1498fc1cd787.svg",
     "static/media/Message.svg": "/personal-homepage/static/media/Message.a791c274a5ca6a7bba77c80d96c14056.svg",
     "static/media/Facebook.svg": "/personal-homepage/static/media/Facebook.14f43e9c25d473ecd49ceaf878f965b9.svg",
-    "main.778efa1b.js.map": "/personal-homepage/static/js/main.778efa1b.js.map",
-    "787.88012170.chunk.js.map": "/personal-homepage/static/js/787.88012170.chunk.js.map"
+    "main.05c2614e.js.map": "/personal-homepage/static/js/main.05c2614e.js.map"
   },
   "entrypoints": [
-    "static/js/main.778efa1b.js"
+    "static/js/main.05c2614e.js"
   ]
 }
