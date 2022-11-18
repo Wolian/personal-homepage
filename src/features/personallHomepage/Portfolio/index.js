@@ -1,20 +1,31 @@
 import {Header, Image, SubTitle, TileWrapper, Title, Wrapper} from "./styled";
 import BlueGithub from "../../../common/icons/BlueGithub.svg"
-import { ProjectTile } from "../../../common/ProjectTile";
+import {useDispatch, useSelector} from "react-redux";
+import {fetchRepoGithub, selectRepoState, selectRepoStatus} from "../personalHomepageSlice";
+import {useEffect} from "react";
+import {githubUsername} from "./githubUsername";
 
 export const Portfolio = () => {
+    const dispatch = useDispatch();
+
+    const repositories = useSelector(selectRepoState);
+    const repoStatus = useSelector(selectRepoStatus);
+
+    useEffect(() => {
+        dispatch(fetchRepoGithub(githubUsername));
+    }, [dispatch]);
+
+
     return (
         <Wrapper>
             <Header>
                 <Image src={BlueGithub} alt="Github Logo"/>
                 <Title>Portfolio</Title>
                 <SubTitle>My recent projects</SubTitle>
-                <TileWrapper>
-                    <ProjectTile/>
-                    <ProjectTile/>
-                    <ProjectTile/>
-                    <ProjectTile/>
-                </TileWrapper>
+                <TileWrapper
+                    status={repoStatus}
+                    repositories={repositories}
+                />
             </Header>
         </Wrapper>
     );
