@@ -2,11 +2,11 @@ import {fetchRepoGithub, fetchRepoGithubError, fetchRepoGithubSuccess} from "./p
 import {getRepositories} from "./personalHomepageAPI";
 import { delay, put, call, takeEvery } from "redux-saga/effects";
 
-function* fetchRepoGithubHandler() {
+function* fetchRepoGithubHandler({payload: username}) {
     try {
         yield delay(2000); //just to demo the loading
-        const repoGithub = yield call(getRepositories);
-        yield put(fetchRepoGithubSuccess(repoGithub));
+        const repositories = yield call(getRepositories, username);
+        yield put(fetchRepoGithubSuccess(repositories));
     }   catch (error) {
         yield put(fetchRepoGithubError());
     }
