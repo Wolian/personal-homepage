@@ -1,21 +1,18 @@
 import {Description, Link, PreLink, Repo, Tile, Title} from "./styled";
 
-export const ProjectTile = () => {
-    return(
-        <Tile>
-            <Title>Movies Browser</Title>
-            <Description>
-                Project description, e.g. website where you can search for favourite movies and people.
-                Project description, e.g. website where you can search.
-            </Description>
+export const ProjectTile = ({ gitRepo }) => {
+    return gitRepo?.map((repo) => (
+        <Tile key={repo.id}>
+            <Title>{repo.name}</Title>
+            <Description>{repo.description}</Description>
             <Repo>
                 <PreLink>Demo:</PreLink>
-                <Link href="https://wolian.github.io/movies-browser/">https://wolian.github.io/movies-browser/</Link>
+                <Link href={repo.homepage}>{repo.homepage}</Link>
             </Repo>
             <Repo>
                 <PreLink>Code:</PreLink>
-                <Link href="https://github.com/Wolian/movies-browser#movies-browser-">https://github.com/Wolian/movies-browser#movies-browser-</Link>
+                <Link href={repo.html_url}>{repo.html_url}</Link>
             </Repo>
         </Tile>
-    );
+    ));
 };
