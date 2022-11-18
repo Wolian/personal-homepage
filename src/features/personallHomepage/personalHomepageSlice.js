@@ -3,20 +3,22 @@ import { createSlice } from "@reduxjs/toolkit";
 const personalHomepageSlice = createSlice({
     name: "personalHomepage",
     initialState: {
-        repo:[],
+        repositories:[],
         status: "initial",
     },
     reducers: {
-        fetchRepoGithub: (state) => {
-            state.status = "loading";
-        },
-        fetchRepoGithubSuccess: (state, {payload: fetchRepo}) => {
-            state.repo = fetchRepo;
-            state.status = "success";
-        },
-        fetchRepoGithubError: (state) => {
-          state.status = "error";
-        },
+        fetchRepoGithub: () => ({
+            status: "loading",
+            repositories: null,
+        }),
+        fetchRepoGithubSuccess: (_, {payload: fetchRepo}) => ({
+            repositories: fetchRepo,
+            status: "success",
+        }),
+        fetchRepoGithubError: () => ({
+            status: "error",
+            repositories: null,
+        }),
     },
 });
 
@@ -26,8 +28,9 @@ export const {
     fetchRepoGithubError,
 } = personalHomepageSlice.actions;
 
-export const selectRepo = (state) => state.personalHomepage;
-export const selectRepoState = (state) => selectRepo(state).repo;
-export const selectRepoStatus = (state) => selectRepo(state).status;
+const selectRepo = state => state.personalHomepage;
+
+export const selectRepoState = state => selectRepo(state).repositories;
+export const selectRepoStatus = state => selectRepo(state).status;
 
 export default personalHomepageSlice.reducer;
