@@ -4,6 +4,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {fetchRepoGithub, selectRepoState, selectRepoStatus} from "../personalHomepageSlice";
 import {useEffect} from "react";
 import {githubUsername} from "./githubUsername";
+import {ProjectTile} from "../../../common/ProjectTile";
 
 export const Portfolio = () => {
     const dispatch = useDispatch();
@@ -22,10 +23,12 @@ export const Portfolio = () => {
                 <Image src={BlueGithub} alt="Github Logo"/>
                 <Title>Portfolio</Title>
                 <SubTitle>My recent projects</SubTitle>
-                <TileWrapper
-                    status={repoStatus}
-                    repositories={repositories}
-                />
+                <TileWrapper>
+                    <ProjectTile
+                        status={repoStatus}
+                        repositories={repositories}
+                    />
+                </TileWrapper>
             </Header>
         </Wrapper>
     );
