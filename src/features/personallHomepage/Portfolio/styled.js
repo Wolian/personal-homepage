@@ -2,9 +2,13 @@ import styled from "styled-components";
 
 export const Wrapper = styled.section`
   margin-top: 72px;
+ 
+  @media(max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+    margin-top: 48px;
+  };
 `;
 
-export const Header = styled.div`
+export const Header = styled.header`
   text-align: center;
 `;
 
@@ -12,15 +16,21 @@ export const Image = styled.img`
   
 `;
 
-export const Title = styled.h2`
+export const SubHeader = styled.h2`
   margin: 8px 0;
   font-weight: 900;
   font-size: 30px;
 `;
 
-export const SubTitle = styled.p`
+export const MyRecentProjects = styled.p`
+  font-weight: normal;
+  margin-top: 8px;
   font-size: 20px;
-  margin: 0 0 24px 0;
+  color: ${({ theme }) => theme.colors.black};
+
+  @media(max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+    font-size: 17px;
+  };
 `;
 
 export const TileWrapper = styled.div`
