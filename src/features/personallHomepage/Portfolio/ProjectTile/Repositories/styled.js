@@ -1,8 +1,17 @@
 import styled from "styled-components";
 
+export const List = styled.ul`
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  list-style: none;
+  padding: 0;
+  grid-gap: 32px;
+`;
+
 export const Tile = styled.div`
-  text-align: start;
   padding: 56px;
+  margin: 0;
   font-size: 18px;
   background: ${({ theme }) => theme.colors.white};
   border: 6px solid rgba(209, 213, 218, 0.3);
