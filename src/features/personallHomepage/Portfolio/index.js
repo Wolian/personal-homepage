@@ -18,20 +18,6 @@ export const Portfolio = () => {
 
 
     return (
-        /*<Wrapper>
-            <Header>
-                <Image src={BlueGithub} alt="Github Logo"/>
-                <Title>Portfolio</Title>
-                <SubTitle>My recent projects</SubTitle>
-                <TileWrapper>
-                    <ProjectTile
-                        status={repoStatus}
-                        repositories={repositories}
-                    />
-                </TileWrapper>
-            </Header>
-        </Wrapper>*/
-
         <Wrapper>
             <Header>
                 <Image src={BlueGithub} alt="Github Logo"/>
@@ -43,7 +29,6 @@ export const Portfolio = () => {
                 status={repoStatus}
                 repositories={repositories}
             />
-
         </Wrapper>
     );
 };
