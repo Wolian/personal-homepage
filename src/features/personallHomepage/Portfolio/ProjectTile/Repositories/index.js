@@ -1,6 +1,6 @@
 import {Description, Link, PreLink, Repo, Tile, Title} from "./styled";
 
-export const ProjectTile = ({ repositories }) => (
+export const Repositories = ({ repositories }) => (
     repositories?.map((repo) => (
             <Tile key={repo.id}>
                 <Title>{repo.name}</Title>
