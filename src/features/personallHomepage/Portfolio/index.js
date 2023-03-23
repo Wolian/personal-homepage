@@ -4,7 +4,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {fetchRepoGithub, selectRepoState, selectRepoStatus} from "../personalHomepageSlice";
 import {useEffect} from "react";
 import {githubUsername} from "./githubUsername";
-import {ProjectTile} from "../../../common/ProjectTile";
+import {ProjectTile} from "./ProjectTile";
 
 export const Portfolio = () => {
     const dispatch = useDispatch();
