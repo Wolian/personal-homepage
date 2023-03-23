@@ -2,17 +2,17 @@ import {Description, Link, List, PreLink, Repo, Tile, Title} from "./styled";
 
 export const Repositories = ({ repositories }) => (
      <List>
-         {repositories?.map((repo) => (
-        <Tile key={repo.id}>
-            <Title>{repo.name}</Title>
-            <Description>{repo.description}</Description>
+         {repositories?.map(({ id, name, description, homepage, html_url}) => (
+        <Tile key={id}>
+            <Title>{name}</Title>
+            <Description>{description}</Description>
             <Repo>
                 <PreLink>Demo:</PreLink>
-                <Link href={repo.homepage}>{repo.homepage}</Link>
+                <Link href={homepage}>{homepage}</Link>
             </Repo>
             <Repo>
                 <PreLink>Code:</PreLink>
-                <Link href={repo.html_url}>{repo.html_url}</Link>
+                <Link href={html_url}>{html_url}</Link>
             </Repo>
         </Tile>
         ))}
