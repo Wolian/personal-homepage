@@ -13,44 +13,50 @@ export const Tile = styled.div`
   padding: 56px;
   margin: 0;
   font-size: 18px;
-  background: ${({ theme }) => theme.colors.white};
-  border: 6px solid rgba(209, 213, 218, 0.3);
-  box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
-  border-radius: 4px;
+  background: ${({ theme }) => theme.colors.boxBackround};
+  border: 6px solid ${({ theme }) => theme.colors.tile.border};
+  box-shadow: ${({ theme }) => theme.boxShadow};
+  border-radius: ${({ theme }) => theme.borderRadiusSmall};
 
   &:hover {
     border: 6px solid rgba(3, 102, 214, 0.2);
     transition: 0.4s;
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px){
+    padding: 20px;
+  };
 `;
 
 export const Title = styled.h3`
   font-weight: 700;
   font-size: 24px;
-  color: ${({ theme }) => theme.colors.scienceBlue};
+  color: ${({ theme }) => theme.colors.primary};
 `;
 
 export const Description = styled.p`
-  color: ${({ theme }) => theme.colors.slateGray};
-  max-width: 480px;
+  margin-top: 24px;
   line-height: 140%;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px){
+    margin-top: 16px;
+    font-size: 14px;
+  };
 `;
 
 export const Repo = styled.div`
-  
   margin-bottom: 8px;
   
 `;
 
 export const PreLink = styled.span`
   width: 80px;
-  color: ${({ theme }) => theme.colors.slateGray};
 `;
 
 export const Link = styled.a`
-  color: ${({ theme }) => theme.colors.scienceBlue};
+  color: ${({ theme }) => theme.colors.primary};
   text-decoration: none;
-  line-height: 140%;
+  line-height: 1.6;
   margin-left: 8px;
   
   &:hover {
