@@ -6,7 +6,7 @@ export const Wrapper = styled.section`
   justify-items: center;
   grid-gap: 32px;
   text-align: center;
-  color: ${({ theme }) => theme.colors.black };
+  color: ${({ theme }) => theme.colors.textPrimary};
 
   @media(max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     grid-gap: 24px;
@@ -36,11 +36,11 @@ export const Button = styled.a`
   font-size: 20px;
   font-weight: 600;
   text-decoration: none;
-  background: ${({ theme }) => theme.colors.scienceBlue};
-  color: ${({ theme }) => theme.colors.white};
+  background: ${({ theme }) => theme.colors.primary};
+  border: 1px solid ${({ theme }) => theme.colors.buttonLink.border};
+  border-radius: ${({ theme }) => theme.borderRadiusSmall};
+  color: ${({ theme }) => theme.colors.buttonLink.text};
   padding: 12px 16px;
   gap: 16px;
-  border: 1px solid rgba(209, 213, 218, 0.1);
-  border-radius: 4px;
 `;
 

@@ -20,13 +20,14 @@ export const SubHeader = styled.h2`
   margin: 8px 0;
   font-weight: 900;
   font-size: 30px;
+  color: ${({ theme }) => theme.colors.textPrimary};
 `;
 
 export const MyRecentProjects = styled.p`
   font-weight: normal;
   margin-top: 8px;
   font-size: 20px;
-  color: ${({ theme }) => theme.colors.black};
+  color: ${({ theme }) => theme.colors.textPrimary};
 
   @media(max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     font-size: 17px;
