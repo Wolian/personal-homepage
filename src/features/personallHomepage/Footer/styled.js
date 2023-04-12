@@ -2,33 +2,57 @@ import styled from "styled-components";
 
 export const Wrapper = styled.footer`
   margin-top: 120px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+    margin-top: 48px;
+  } ;
 `;
 
-export const Talk = styled.p`
+export const Talk = styled.h2`
   font-size: 12px;
-  font-weight: 700;
   text-transform: uppercase;
-  color: ${({ theme }) => theme.colors.slateGray};
+  letter-spacing: initial;
+  margin: 0;
+`;
+
+export const Address = styled.address`
+  font-style: unset;
+`;
+
+export const EmailWrapper = styled.div`
+  margin: 24px 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+    margin: 12px 0;
+  };
 `;
 
 export const Email = styled.a`
   font-weight: 900;
   font-size: 32px;
-  color: ${({ theme }) => theme.colors.black};
+  color: ${({ theme }) => theme.colors.textPrimary};
   text-decoration: none;
   transition: color 0.4s;
-  margin: 24px 0;
-  
+
   &:hover {
-    color: ${({ theme }) => theme.colors.scienceBlue};
+    color: ${({ theme }) => theme.colors.primary};
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+    font-size: 18px;
+  };
 `;
 
 export const Text = styled.p`
   font-size: 18px;
-  color: ${({ theme }) => theme.colors.black};
+  color: ${({ theme }) => theme.colors.textPrimary};
   max-width: 670px;
   line-height: 1.4;
+  margin: 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+    font-size: 14px;
+  };
 `;
 
 export const Icons = styled.p`
