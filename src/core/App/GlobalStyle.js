@@ -12,8 +12,8 @@ export const GlobalStyle = createGlobalStyle`
     body {
       font-family: 'Inter', sans-serif;
       transition: background 0.3s;
-      background-color: ${({ theme }) => theme.colors.whiteLilac};
-      color: ${({ theme }) => theme.colors.black};
+      background: ${({ theme }) => theme.colors.site.background};
+      color: ${({ theme }) => theme.colors.site.text};
       letter-spacing: 0.05em;
       word-break: break-word;
       max-width: 1216px;
