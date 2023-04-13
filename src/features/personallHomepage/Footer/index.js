@@ -1,8 +1,6 @@
-import { Email, Icons, Link, Talk, Text, Wrapper, Address, EmailWrapper } from "./styled";
+import { Email, Talk, Text, Wrapper, Address, EmailWrapper } from "./styled";
 import { email } from "../email";
-import { ReactComponent as Github } from "../../../common/icons/Github.svg";
-import { ReactComponent as Facebook } from "../../../common/icons/Facebook.svg";
-import { ReactComponent as LinkedIn } from "../../../common/icons/LinkedIn.svg";
+import { SocialIcons } from "./SocialIcons";
 
 export const Footer = () => {
   return (
@@ -19,29 +17,7 @@ export const Footer = () => {
           start working for a company as a junior frontend developer. If my
           projects interest you, feel free to contact me.
         </Text>
-        <Icons>
-          <Link
-            href="https://github.com/Wolian"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Github />
-          </Link>
-          <Link
-            href="https://www.facebook.com/krzysiek.banasiak.37/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Facebook />
-          </Link>
-          <Link
-            href="https://www.linkedin.com/in/kbanasiak347/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <LinkedIn />
-          </Link>
-        </Icons>
+        <SocialIcons />
       </Address>
     </Wrapper>
   );
