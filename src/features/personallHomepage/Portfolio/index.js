@@ -1,5 +1,4 @@
-import {Header, Image, MyRecentProjects, SubHeader, Wrapper} from "./styled";
-import BlueGithub from "../../../common/icons/BlueGithub.svg"
+import {Header, MyRecentProjects, StyledGithubIcon, SubHeader, Wrapper} from "./styled";
 import {useDispatch, useSelector} from "react-redux";
 import {fetchRepoGithub, selectRepoState, selectRepoStatus} from "../personalHomepageSlice";
 import {useEffect} from "react";
@@ -20,7 +19,7 @@ export const Portfolio = () => {
     return (
         <Wrapper>
             <Header>
-                <Image src={BlueGithub} alt="Github Logo"/>
+                <StyledGithubIcon />
                 <SubHeader>Portfolio</SubHeader>
                 <MyRecentProjects>My recent projects</MyRecentProjects>
             </Header>
