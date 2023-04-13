@@ -34,12 +34,3 @@ export const MyRecentProjects = styled.p`
   };
 `;
 
-export const TileWrapper = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32px;
-
-  @media(max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
-    grid-template-columns: 1fr;
-  };
-`;

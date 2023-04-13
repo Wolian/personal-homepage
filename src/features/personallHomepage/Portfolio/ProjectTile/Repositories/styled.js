@@ -7,6 +7,11 @@ export const List = styled.ul`
   list-style: none;
   padding: 0;
   grid-gap: 32px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px){
+    grid-template-columns: 1fr;
+    grid-gap: 24px;
+  };
 `;
 
 export const Tile = styled.div`
