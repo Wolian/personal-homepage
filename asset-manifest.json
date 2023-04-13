@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.js": "/personal-homepage/static/js/main.fa691e50.js",
+    "main.js": "/personal-homepage/static/js/main.b48eaa84.js",
     "static/js/787.88012170.chunk.js": "/personal-homepage/static/js/787.88012170.chunk.js",
     "static/media/KrzysztofBanasiak.jpg": "/personal-homepage/static/media/KrzysztofBanasiak.002a86ca008b4d07444c.jpg",
     "static/media/sun.svg": "/personal-homepage/static/media/sun.873cf05d51f90af830846cebd56bd380.svg",
-    "static/media/Github.svg": "/personal-homepage/static/media/Github.09abe07d9aebd72f04b4118999889c9a.svg",
+    "static/media/Github.svg": "/personal-homepage/static/media/Github.730ae07b20789d3a43d0b464389f2385.svg",
     "static/media/BlueGithub.svg": "/personal-homepage/static/media/BlueGithub.571d1ccb5b05142ffef2ab4d835a907a.svg",
     "index.html": "/personal-homepage/index.html",
-    "static/media/LinkedIn.svg": "/personal-homepage/static/media/LinkedIn.2c26b104242a1c77c13c1498fc1cd787.svg",
+    "static/media/LinkedIn.svg": "/personal-homepage/static/media/LinkedIn.9f38a04c76c9595b2da81e0828807b47.svg",
     "static/media/Danger.svg": "/personal-homepage/static/media/Danger.368eab1b87e3c2785bab7da11c278b44.svg",
     "static/media/Message.svg": "/personal-homepage/static/media/Message.a791c274a5ca6a7bba77c80d96c14056.svg",
-    "static/media/Facebook.svg": "/personal-homepage/static/media/Facebook.14f43e9c25d473ecd49ceaf878f965b9.svg",
-    "main.fa691e50.js.map": "/personal-homepage/static/js/main.fa691e50.js.map",
+    "static/media/Facebook.svg": "/personal-homepage/static/media/Facebook.c86c9160f434f5f752b172ce0fe890d9.svg",
+    "main.b48eaa84.js.map": "/personal-homepage/static/js/main.b48eaa84.js.map",
     "787.88012170.chunk.js.map": "/personal-homepage/static/js/787.88012170.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.fa691e50.js"
+    "static/js/main.b48eaa84.js"
   ]
 }
