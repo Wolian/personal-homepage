@@ -54,11 +54,3 @@ export const Text = styled.p`
     font-size: 14px;
   };
 `;
-
-export const Icons = styled.p`
-  margin-top: 56px;
-`;
-
-export const Link = styled.a`
-  margin-right: 24px;
-`;
