@@ -8,11 +8,11 @@ export const Repositories = ({ repositories }) => (
             <Description>{description}</Description>
             <Repo>
                 <PreLink>Demo:</PreLink>
-                <Link href={homepage}>{homepage}</Link>
+                <Link target="_blank" rel="noreferrer" href={homepage}>{homepage}</Link>
             </Repo>
             <Repo>
                 <PreLink>Code:</PreLink>
-                <Link href={html_url}>{html_url}</Link>
+                <Link target="_blank" rel="noreferrer" href={html_url}>{html_url}</Link>
             </Repo>
         </Tile>
         ))}
